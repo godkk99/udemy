@@ -1,4 +1,5 @@
-h1,h2 {
+h1,
+h2 {
     text-align: center;
     font-weight: 600;
     text-decoration: blue underline wavy;
@@ -9,7 +10,8 @@ h1,h2 {
 
 button {
     font-size: 30px;
-    background-color: #669bbc;;
+    background-color: #669bbc;
+    ;
 }
 
 body {
@@ -24,41 +26,73 @@ a {
     text-decoration: none;
     color: blue;
 }
+
 #signup {
     background-color: #ffc8dd;
 }
+
 span {
     color: #faedcd;
 }
-.cuttle {
-    background-color: #ffc8dd;
-    color: #d4a373;
-    font-size: 10px;
-}
+
+
+
 .post a {
     font-size: 30px;
-    color: yellow;
+    color: rgb(47, 0, 255);
+    text-decoration: none;
+    font-weight: 700;
 }
 
 footer a {
     color: red;
 }
-input + button {
+
+input+button {
     background-color: yellow;
 }
-h2 + button {
+
+h2+button {
     font-size: 50px;
 }
-footer > a {
-    color : green;
+
+footer>a {
+    color: green;
 }
 
 input[type="password"] {
-    color : greenyellow;
+    color: greenyellow;
 }
+
 p[class="post"] {
-    background-color: yellow;
+    background-color: #d4a373;
 }
+
 a[href*="google"] {
-    color : magenta;
+    color: magenta;
+}
+
+.post button:hover {
+    background-color: #ffc8dd;
+    color: #d4a373;
+}
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+.post button:active {
+    background-color: aqua;
+}
+
+.post:nth-of-type(3n) {
+    background-color: #4e3904;
+}
+
+p::first-letter {
+    font-size: 50px;
+}
+
+p::selection {
+    background-color: #ffc8dd;
 }
