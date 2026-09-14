@@ -1,0 +1,64 @@
+h1,h2 {
+    text-align: center;
+    font-weight: 600;
+    text-decoration: blue underline wavy;
+    letter-spacing: 15px;
+    font-size: 50px;
+    color: #cdb4db;
+}
+
+button {
+    font-size: 30px;
+    background-color: #669bbc;;
+}
+
+body {
+    background-color: #669bbc;
+}
+
+p {
+    line-height: 2;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+#signup {
+    background-color: #ffc8dd;
+}
+span {
+    color: #faedcd;
+}
+.cuttle {
+    background-color: #ffc8dd;
+    color: #d4a373;
+    font-size: 10px;
+}
+.post a {
+    font-size: 30px;
+    color: yellow;
+}
+
+footer a {
+    color: red;
+}
+input + button {
+    background-color: yellow;
+}
+h2 + button {
+    font-size: 50px;
+}
+footer > a {
+    color : green;
+}
+
+input[type="password"] {
+    color : greenyellow;
+}
+p[class="post"] {
+    background-color: yellow;
+}
+a[href*="google"] {
+    color : magenta;
+}
