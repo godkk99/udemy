@@ -1,0 +1,14 @@
+section {
+    width: 80%;
+    height: 800px;
+    /* background-image: url(https://i.pinimg.com/474x/1a/b2/63/1ab263829dab0ebc06872868655f89cf.jpg);
+    background-size: cover;
+    background-position: top; */
+    background: url(https://i.pinimg.com/474x/1a/b2/63/1ab263829dab0ebc06872868655f89cf.jpg) no-repeat center/30%, blueviolet;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 100px;
+    color: white;
+}
