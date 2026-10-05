@@ -1,4 +1,3 @@
-const firstName = prompt("dwdwdw");
-if (!firstName) {
-    firstName = prompt("retry")
-};
+function sum(nums) {
+    return nums.reduce((total, el) => total + el)
+}
