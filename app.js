@@ -1,36 +1,28 @@
-const btn = document.querySelector('#v2')
-btn.onclick = function () {
-    console.log("you clicked me")
-    console.log("I hope it worked")
 
+const makeRandColor = () => {
+    const r = Math.floor(Math.random() * 255);
+    const g = Math.floor(Math.random() * 255);
+    const b = Math.floor(Math.random() * 255);
+    return `rgb(${r}, ${g}, ${b})`;
 }
 
-function scream() {
-    console.log("ahhhhhhhh")
-    console.log("stop touching me")
+const buttons = document.querySelectorAll('button');
+
+for (let button of buttons) {
+    button.addEventListener('click', function () {
+        button.style.backgroundColor = makeRandColor();
+        button.style.color = makeRandColor();
+    })
 }
 
-btn.onmouseenter = scream;
-
-document.querySelector('h1').onclick = function () {
-    alert('youclicked me')
+const h1s = document.querySelectorAll('h1');
+for (let h1 of h1s) {
+    h1.addEventListener('click', function () {
+        h1.style.backgroundColor = makeRandColor();
+        h1.style.Color = makeRandColor();
+    })
 }
 
-const btns3 = document.querySelector('#v3')
-btns3.addEventListener('mouseup', scream
-)
+function colorize() {
 
-function twist() {
-    console.log("twist")
 }
-
-function shout() {
-    console.log("shout")
-}
-
-const tasButton = document.querySelector('#tas')
-// tasButton.onclick = twist;
-// tasButton.onclick = shout;
-
-tasButton.addEventListener('click', twist, { once: true })
-tasButton.addEventListener('click', shout)
