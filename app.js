@@ -1,14 +1,27 @@
-const input = document.querySelector('input');
-const h1 = document.querySelector('h1')
+const maxscore = document.querySelector('#maxscore');
+const player1Button = document.querySelector('#player1Button');
+const player2Button = document.querySelector('#player2Button');
+const resetButton = document.querySelector('#resetButton');
+const player1Score = document.querySelector('#player1Score');
+const player2Score = document.querySelector('#player2Score');
 
 
-// input.addEventListener('change', function (e) {
-//     console.log("sdwdwd")
-// })
 
-input.addEventListener('input', function (e) {
-    h1.innerText = input.value
+player1Score.textContent = 0;
+player2Score.textContent = 0;
+player1Button.addEventListener('click', function () {
+    player1Score.textContent++;
 
-    console.log("input event")
-    console.log(e)
+
+})
+
+player2Button.addEventListener('click', function () {
+    player2Score.textContent++;
+
+})
+
+resetButton.addEventListener('click', function () {
+    player1Score.textContent = 0;
+    player2Score.textContent = 0;
+
 })
