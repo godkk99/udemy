@@ -4,12 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Page</title>
     <link rel="stylesheet" href="style.css">
+    <title>prevent default</title>
+
 </head>
 
 <body>
+    <div class="keeper">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7ZYdc6gR3UV7OQQdUeX8Ii61e7juXsPPkqILUGWZKFg&s=10"
+            alt="">
+        <h1>Ping Pong Score Keeper</h1>
 
+        <br>
+        <span id="player1Score">0</span> to <span id="player2Score">0</span>
+        <br>
+        Use the buttons below to keep score.
+        <br>
+        Playing To <select name="maxscore" id="maxscore">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+        </select>
+        <br>
+
+        <button id="player1Button">+1 Player One</button>
+        <button id="player2Button">+1 Player Two</button>
+        <button id="resetButton">Reset</button>
+
+
+    </div>
     <script src="app.js"></script>
 </body>
 
